@@ -52,3 +52,22 @@
         router.push({ name: "Products", query: { filter: value } });
     };
 </script>
+
+<style scoped>
+    .filters button {
+        padding: 0.5rem 1rem;
+        margin-right: 0.5rem;
+        border: 1px solid #ccc;
+        background: #fff;
+        cursor: pointer;
+    }
+    .filters button.active {
+        background: #42b983;
+        color: white;
+        border-color: #42b983;
+    }
+    .product-list { list-style: none; padding: 0; }
+    .product-item { margin-bottom: 0.5rem; }
+    .product-link { text-decoration: none; color: #333; }
+    .product-link:hover { color: #42b983; }
+</style>
